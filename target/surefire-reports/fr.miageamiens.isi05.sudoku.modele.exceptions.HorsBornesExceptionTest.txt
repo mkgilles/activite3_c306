@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: fr.miageamiens.isi05.sudoku.modele.exceptions.HorsBornesExceptionTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s -- in fr.miageamiens.isi05.sudoku.modele.exceptions.HorsBornesExceptionTest

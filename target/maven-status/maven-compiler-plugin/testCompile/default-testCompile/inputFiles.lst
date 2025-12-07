@@ -1,0 +1,13 @@
+D:\workspace\activite3\src\test\java\fr\miageamiens\isi05\sudoku\modele\exceptions\GrilleExceptionTest.java
+D:\workspace\activite3\src\test\java\fr\miageamiens\isi05\sudoku\modele\exceptions\HorsBornesExceptionTest.java
+D:\workspace\activite3\src\test\java\fr\miageamiens\isi05\sudoku\modele\exceptions\ValeurImpossibleExceptionTest.java
+D:\workspace\activite3\src\test\java\fr\miageamiens\isi05\sudoku\modele\exceptions\ValeurInitialeModificationExceptionTest.java
+D:\workspace\activite3\src\test\java\fr\miageamiens\isi05\sudoku\modele\exceptions\ValeurInterditeExceptionTest.java
+D:\workspace\activite3\src\test\java\fr\miageamiens\isi05\sudoku\modele\GrilleImplTest.java
+D:\workspace\activite3\src\test\java\fr\miageamiens\isi05\sudoku\modele\ValeurDeCaseAsCharTest.java
+D:\workspace\activite3\src\test\java\fr\miageamiens\isi05\sudoku\parser\GrilleFactoryImplTest.java
+D:\workspace\activite3\src\test\java\fr\miageamiens\isi05\sudoku\parser\GrilleParserExceptionTest.java
+D:\workspace\activite3\src\test\java\fr\miageamiens\isi05\sudoku\parser\GrilleParserTest.java
+D:\workspace\activite3\src\test\java\fr\miageamiens\isi05\sudoku\solver\SolverExceptionTest.java
+D:\workspace\activite3\src\test\java\fr\miageamiens\isi05\sudoku\solver\SolverImplTest.java
+D:\workspace\activite3\src\test\java\fr\miageamiens\isi05\sudoku\solver\StoppableImplTest.java

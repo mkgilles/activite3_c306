@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: fr.miageamiens.isi05.sudoku.solver.SolverImplTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.056 s <<< FAILURE! -- in fr.miageamiens.isi05.sudoku.solver.SolverImplTest
+fr.miageamiens.isi05.sudoku.solver.SolverImplTest.testSolveGrilleDe16 -- Time elapsed: 0.026 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: La grille doit être résolue ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:210)
+	at fr.miageamiens.isi05.sudoku.solver.SolverImplTest.testSolveGrilleDe16(SolverImplTest.java:69)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+fr.miageamiens.isi05.sudoku.solver.SolverImplTest.testSolveGrilleDe9 -- Time elapsed: 0.009 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: La grille doit être résolue ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:210)
+	at fr.miageamiens.isi05.sudoku.solver.SolverImplTest.testSolveGrilleDe9(SolverImplTest.java:80)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
