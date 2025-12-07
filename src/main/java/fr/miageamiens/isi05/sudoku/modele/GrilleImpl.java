@@ -149,23 +149,25 @@ public class GrilleImpl implements Grille {
   public void setValeur(int x, int y, ValeurDeCase value)
       throws ValeurImpossibleException, ValeurInterditeException,
       HorsBornesException, ValeurInitialeModificationException {
+
     checkBounds(x, y);
-    
-      
+
     if (isValeurInitiale(x, y)) {
       throw new ValeurInitialeModificationException(
           "Impossible de modifier une valeur initiale");
     }
-    if (!isPossible(x, y, value)) {
-      throw new ValeurImpossibleException(
-          "Valeur impossible à placer: " + value);
-    }
+
+    // Vérification de la valeur autorisée DOIT venir avant isPossible
     if (!(valeursAutorisees.contains(value))) {
       throw new ValeurInterditeException("valeur interdite : " + value);
     }
 
-    grille[x][y] = value;
+    if (!isPossible(x, y, value)) {
+      throw new ValeurImpossibleException(
+          "Valeur impossible à placer: " + value);
+    }
 
+    grille[x][y] = value;
   }
 
   @Override
@@ -227,9 +229,48 @@ public class GrilleImpl implements Grille {
    * @throws ValeurInterditeException si value n'est pas un caractère pouvant
    *                                  être mis dans la grille
    */
-  public boolean isPossible(int x, int y, ValeurDeCase value)
+  public boolean isPossible(int x, int y, ValeurDeCase v)
       throws HorsBornesException, ValeurInterditeException {
     checkBounds(x, y);
+
+    if (v == null)
+      return true;
+
+    if (valeursAutorisees == null || !valeursAutorisees.contains(v)) {
+      throw new ValeurInterditeException("Valeur interdite : " + v);
+    }
+
+    // Vérifier ligne
+    for (int col = 0; col < this.getDimension(); col++) {
+      if (col == y)
+        continue;
+      if (grille[x][col] != null && grille[x][col].equals(v))
+        return false;
+    }
+
+    // Vérifier colonne
+    for (int lig = 0; lig < this.getDimension(); lig++) {
+      if (lig == x)
+        continue;
+      if (grille[lig][y] != null && grille[lig][y].equals(v))
+        return false;
+    }
+
+    // Vérifier sous-grille
+    int tailleSouGrille = (int) Math.sqrt(getDimension());
+    int startX = (x / tailleSouGrille) * tailleSouGrille;
+    int startY = (y / tailleSouGrille) * tailleSouGrille;
+
+    for (int i = 0; i < tailleSouGrille; i++) {
+      for (int j = 0; j < tailleSouGrille; j++) {
+        int cx = startX + i;
+        int cy = startY + j;
+        if (cx == x && cy == y)
+          continue;
+        if (grille[cx][cy] != null && grille[cx][cy].equals(v))
+          return false;
+      }
+    }
 
     return true;
   }
