@@ -150,17 +150,18 @@ public class GrilleImpl implements Grille {
       throws ValeurImpossibleException, ValeurInterditeException,
       HorsBornesException, ValeurInitialeModificationException {
     checkBounds(x, y);
+    
+      
     if (isValeurInitiale(x, y)) {
       throw new ValeurInitialeModificationException(
           "Impossible de modifier une valeur initiale");
     }
-    if (!(valeursAutorisees.contains(value))) {
-      throw new ValeurInterditeException("valeur interdite : " + value);
-    }
-
     if (!isPossible(x, y, value)) {
       throw new ValeurImpossibleException(
           "Valeur impossible à placer: " + value);
+    }
+    if (!(valeursAutorisees.contains(value))) {
+      throw new ValeurInterditeException("valeur interdite : " + value);
     }
 
     grille[x][y] = value;

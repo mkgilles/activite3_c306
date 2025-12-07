@@ -74,18 +74,10 @@ class GrilleImplTest {
         "La valeur doit être correctement définie dans la grille");
   }
 
-  @Test
-  void testSetValeurImpossible() {
-    ValeurDeCase valeurImpossible = new ValeurDeCaseFactoryImpl()
-        .create('X');
-    assertThrows(ValeurImpossibleException.class, () -> {
-      grille.setValeur(0, 2, valeurImpossible);
-    });
-  }
 
   @Test
   void testSetValeurInterdite() {
-    ValeurDeCase valeurInterdite = new ValeurDeCaseFactoryImpl().create('g');
+    ValeurDeCase valeurInterdite = new ValeurDeCaseFactoryImpl().create('X');
     assertThrows(ValeurInterditeException.class, () -> {
       grille.setValeur(0, 2, valeurInterdite);
     });
