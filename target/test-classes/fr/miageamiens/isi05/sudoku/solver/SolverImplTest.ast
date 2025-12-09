@@ -1,0 +1,365 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<CompilationUnit BeginColumn='1' BeginLine='4' Compact='false' EndColumn='3' EndLine='81' Image='' PackageName='fr.miageamiens.isi05.sudoku.solver'>
+    <PackageDeclaration BeginColumn='9' BeginLine='4' EndColumn='43' EndLine='4' Image='' Name='fr.miageamiens.isi05.sudoku.solver'>
+        <ModifierList BeginColumn='1' BeginLine='4' EffectiveModifiers='[]' EndColumn='1' EndLine='4' ExplicitModifiers='[]' Image='' />
+    </PackageDeclaration>
+    <ImportDeclaration BeginColumn='1' BeginLine='6' EndColumn='50' EndLine='6' Image='' ImportOnDemand='true' ImportedName='org.junit.jupiter.api.Assertions' ImportedSimpleName='' ModuleImport='false' PackageName='org.junit.jupiter.api.Assertions' Static='true' />
+    <ImportDeclaration BeginColumn='1' BeginLine='8' EndColumn='28' EndLine='8' Image='' ImportOnDemand='false' ImportedName='java.io.InputStream' ImportedSimpleName='InputStream' ModuleImport='false' PackageName='java.io' Static='false' />
+    <ImportDeclaration BeginColumn='1' BeginLine='9' EndColumn='21' EndLine='9' Image='' ImportOnDemand='false' ImportedName='java.net.URL' ImportedSimpleName='URL' ModuleImport='false' PackageName='java.net' Static='false' />
+    <ImportDeclaration BeginColumn='1' BeginLine='10' EndColumn='41' EndLine='10' Image='' ImportOnDemand='false' ImportedName='org.junit.jupiter.api.BeforeEach' ImportedSimpleName='BeforeEach' ModuleImport='false' PackageName='org.junit.jupiter.api' Static='false' />
+    <ImportDeclaration BeginColumn='1' BeginLine='12' EndColumn='50' EndLine='12' Image='' ImportOnDemand='false' ImportedName='fr.miageamiens.isi05.sudoku.modele.Grille' ImportedSimpleName='Grille' ModuleImport='false' PackageName='fr.miageamiens.isi05.sudoku.modele' Static='false' />
+    <ImportDeclaration BeginColumn='1' BeginLine='13' EndColumn='57' EndLine='13' Image='' ImportOnDemand='false' ImportedName='fr.miageamiens.isi05.sudoku.parser.GrilleFactory' ImportedSimpleName='GrilleFactory' ModuleImport='false' PackageName='fr.miageamiens.isi05.sudoku.parser' Static='false' />
+    <ImportDeclaration BeginColumn='1' BeginLine='14' EndColumn='61' EndLine='14' Image='' ImportOnDemand='false' ImportedName='fr.miageamiens.isi05.sudoku.parser.GrilleFactoryImpl' ImportedSimpleName='GrilleFactoryImpl' ModuleImport='false' PackageName='fr.miageamiens.isi05.sudoku.parser' Static='false' />
+    <ImportDeclaration BeginColumn='1' BeginLine='15' EndColumn='56' EndLine='15' Image='' ImportOnDemand='false' ImportedName='fr.miageamiens.isi05.sudoku.parser.GrilleParser' ImportedSimpleName='GrilleParser' ModuleImport='false' PackageName='fr.miageamiens.isi05.sudoku.parser' Static='false' />
+    <ImportDeclaration BeginColumn='1' BeginLine='16' EndColumn='65' EndLine='16' Image='' ImportOnDemand='false' ImportedName='fr.miageamiens.isi05.sudoku.parser.GrilleParserException' ImportedSimpleName='GrilleParserException' ModuleImport='false' PackageName='fr.miageamiens.isi05.sudoku.parser' Static='false' />
+    <ImportDeclaration BeginColumn='1' BeginLine='17' EndColumn='63' EndLine='17' Image='' ImportOnDemand='false' ImportedName='fr.miageamiens.isi05.sudoku.parser.ValeurDeCaseFactory' ImportedSimpleName='ValeurDeCaseFactory' ModuleImport='false' PackageName='fr.miageamiens.isi05.sudoku.parser' Static='false' />
+    <ImportDeclaration BeginColumn='1' BeginLine='18' EndColumn='67' EndLine='18' Image='' ImportOnDemand='false' ImportedName='fr.miageamiens.isi05.sudoku.parser.ValeurDeCaseFactoryImpl' ImportedSimpleName='ValeurDeCaseFactoryImpl' ModuleImport='false' PackageName='fr.miageamiens.isi05.sudoku.parser' Static='false' />
+    <ImportDeclaration BeginColumn='1' BeginLine='19' EndColumn='35' EndLine='19' Image='' ImportOnDemand='false' ImportedName='org.junit.jupiter.api.Test' ImportedSimpleName='Test' ModuleImport='false' PackageName='org.junit.jupiter.api' Static='false' />
+    <ClassDeclaration Abstract='false' Annotation='false' Anonymous='false' BeginColumn='1' BeginLine='24' BinaryName='fr.miageamiens.isi05.sudoku.solver.SolverImplTest' CanonicalName='fr.miageamiens.isi05.sudoku.solver.SolverImplTest' EffectiveVisibility='package' EndColumn='6' EndLine='24' Enum='false' Final='false' Image='' Interface='false' Local='false' Nested='false' PackageName='fr.miageamiens.isi05.sudoku.solver' Record='false' RegularClass='true' RegularInterface='false' SimpleName='SolverImplTest' Static='false' TopLevel='true' UnnamedToplevelClass='false' Visibility='package'>
+        <ModifierList BeginColumn='1' BeginLine='24' EffectiveModifiers='[]' EndColumn='1' EndLine='24' ExplicitModifiers='[]' Image='' />
+        <ClassBody BeginColumn='22' BeginLine='24' Empty='false' EndColumn='2' EndLine='81' Image='' Size='6'>
+            <FieldDeclaration BeginColumn='18' BeginLine='26' EffectiveVisibility='private' EndColumn='24' EndLine='26' Image='' Static='false' VariableName='grille' Visibility='private'>
+                <ModifierList BeginColumn='3' BeginLine='26' EffectiveModifiers='[private]' EndColumn='10' EndLine='26' ExplicitModifiers='[private]' Image='' />
+                <ClassType BeginColumn='11' BeginLine='26' EndColumn='17' EndLine='26' FullyQualified='false' Image='' PackageQualifier='' SimpleName='Grille' />
+                <VariableDeclarator BeginColumn='18' BeginLine='26' EndColumn='24' EndLine='26' Image='' Initializer='false' Name='grille'>
+                    <VariableId ArrayType='false' BeginColumn='18' BeginLine='26' EffectiveVisibility='private' EndColumn='24' EndLine='26' EnumConstant='false' ExceptionBlockParameter='false' Field='true' Final='false' ForLoopVariable='false' ForeachVariable='false' FormalParameter='false' Image='' LambdaParameter='false' LocalVariable='false' Name='grille' PatternBinding='false' RecordComponent='false' ResourceDeclaration='false' Static='false' TypeInferred='false' Unnamed='false' Visibility='private' />
+                </VariableDeclarator>
+            </FieldDeclaration>
+            <FieldDeclaration BeginColumn='18' BeginLine='27' EffectiveVisibility='private' EndColumn='27' EndLine='27' Image='' Static='false' VariableName='grilleDe9' Visibility='private'>
+                <ModifierList BeginColumn='3' BeginLine='27' EffectiveModifiers='[private]' EndColumn='10' EndLine='27' ExplicitModifiers='[private]' Image='' />
+                <ClassType BeginColumn='11' BeginLine='27' EndColumn='17' EndLine='27' FullyQualified='false' Image='' PackageQualifier='' SimpleName='Grille' />
+                <VariableDeclarator BeginColumn='18' BeginLine='27' EndColumn='27' EndLine='27' Image='' Initializer='false' Name='grilleDe9'>
+                    <VariableId ArrayType='false' BeginColumn='18' BeginLine='27' EffectiveVisibility='private' EndColumn='27' EndLine='27' EnumConstant='false' ExceptionBlockParameter='false' Field='true' Final='false' ForLoopVariable='false' ForeachVariable='false' FormalParameter='false' Image='' LambdaParameter='false' LocalVariable='false' Name='grilleDe9' PatternBinding='false' RecordComponent='false' ResourceDeclaration='false' Static='false' TypeInferred='false' Unnamed='false' Visibility='private' />
+                </VariableDeclarator>
+            </FieldDeclaration>
+            <MethodDeclaration Abstract='false' Arity='0' BeginColumn='8' BeginLine='30' EffectiveVisibility='package' EndColumn='13' EndLine='30' Final='false' Image='' MainMethod='false' Name='setUp' Overridden='false' Static='false' Varargs='false' Visibility='package' Void='true'>
+                <ModifierList BeginColumn='3' BeginLine='29' EffectiveModifiers='[]' EndColumn='14' EndLine='29' ExplicitModifiers='[]' Image=''>
+                    <Annotation BeginColumn='3' BeginLine='29' EndColumn='14' EndLine='29' Image='' SimpleName='BeforeEach'>
+                        <ClassType BeginColumn='4' BeginLine='29' EndColumn='14' EndLine='29' FullyQualified='false' Image='' PackageQualifier='' SimpleName='BeforeEach' />
+                    </Annotation>
+                </ModifierList>
+                <VoidType BeginColumn='3' BeginLine='30' EndColumn='7' EndLine='30' Image='' />
+                <FormalParameters BeginColumn='13' BeginLine='30' Empty='true' EndColumn='15' EndLine='30' Image='' Size='0' />
+                <ThrowsList BeginColumn='16' BeginLine='30' Empty='false' EndColumn='32' EndLine='30' Image='' Size='1'>
+                    <ClassType BeginColumn='23' BeginLine='30' EndColumn='32' EndLine='30' FullyQualified='false' Image='' PackageQualifier='' SimpleName='Exception' />
+                </ThrowsList>
+                <Block BeginColumn='33' BeginLine='30' Empty='false' EndColumn='4' EndLine='54' Image='' Size='8' containsComment='false'>
+                    <LocalVariableDeclaration BeginColumn='19' BeginLine='31' EffectiveVisibility='local' EndColumn='26' EndLine='31' Final='false' Image='' TypeInferred='false' Visibility='local'>
+                        <ModifierList BeginColumn='5' BeginLine='31' EffectiveModifiers='[]' EndColumn='5' EndLine='31' ExplicitModifiers='[]' Image='' />
+                        <ClassType BeginColumn='5' BeginLine='31' EndColumn='18' EndLine='31' FullyQualified='false' Image='' PackageQualifier='' SimpleName='GrilleFactory' />
+                        <VariableDeclarator BeginColumn='19' BeginLine='31' EndColumn='52' EndLine='31' Image='' Initializer='true' Name='factory'>
+                            <VariableId ArrayType='false' BeginColumn='19' BeginLine='31' EffectiveVisibility='local' EndColumn='26' EndLine='31' EnumConstant='false' ExceptionBlockParameter='false' Field='false' Final='false' ForLoopVariable='false' ForeachVariable='false' FormalParameter='false' Image='' LambdaParameter='false' LocalVariable='true' Name='factory' PatternBinding='false' RecordComponent='false' ResourceDeclaration='false' Static='false' TypeInferred='false' Unnamed='false' Visibility='local' />
+                            <ConstructorCall AnonymousClass='false' BeginColumn='29' BeginLine='31' CompileTimeConstant='false' DiamondTypeArgs='false' EndColumn='52' EndLine='31' Expression='true' Image='' MethodName='new' ParenthesisDepth='0' Parenthesized='false' QualifiedInstanceCreation='false'>
+                                <ClassType BeginColumn='33' BeginLine='31' EndColumn='50' EndLine='31' FullyQualified='false' Image='' PackageQualifier='' SimpleName='GrilleFactoryImpl' />
+                                <ArgumentList BeginColumn='50' BeginLine='31' Empty='true' EndColumn='52' EndLine='31' Image='' Size='0' />
+                            </ConstructorCall>
+                        </VariableDeclarator>
+                    </LocalVariableDeclaration>
+                    <LocalVariableDeclaration BeginColumn='25' BeginLine='32' EffectiveVisibility='local' EndColumn='38' EndLine='32' Final='false' Image='' TypeInferred='false' Visibility='local'>
+                        <ModifierList BeginColumn='5' BeginLine='32' EffectiveModifiers='[]' EndColumn='5' EndLine='32' ExplicitModifiers='[]' Image='' />
+                        <ClassType BeginColumn='5' BeginLine='32' EndColumn='24' EndLine='32' FullyQualified='false' Image='' PackageQualifier='' SimpleName='ValeurDeCaseFactory' />
+                        <VariableDeclarator BeginColumn='25' BeginLine='32' EndColumn='70' EndLine='32' Image='' Initializer='true' Name='valeurFactory'>
+                            <VariableId ArrayType='false' BeginColumn='25' BeginLine='32' EffectiveVisibility='local' EndColumn='38' EndLine='32' EnumConstant='false' ExceptionBlockParameter='false' Field='false' Final='false' ForLoopVariable='false' ForeachVariable='false' FormalParameter='false' Image='' LambdaParameter='false' LocalVariable='true' Name='valeurFactory' PatternBinding='false' RecordComponent='false' ResourceDeclaration='false' Static='false' TypeInferred='false' Unnamed='false' Visibility='local' />
+                            <ConstructorCall AnonymousClass='false' BeginColumn='41' BeginLine='32' CompileTimeConstant='false' DiamondTypeArgs='false' EndColumn='70' EndLine='32' Expression='true' Image='' MethodName='new' ParenthesisDepth='0' Parenthesized='false' QualifiedInstanceCreation='false'>
+                                <ClassType BeginColumn='45' BeginLine='32' EndColumn='68' EndLine='32' FullyQualified='false' Image='' PackageQualifier='' SimpleName='ValeurDeCaseFactoryImpl' />
+                                <ArgumentList BeginColumn='68' BeginLine='32' Empty='true' EndColumn='70' EndLine='32' Image='' Size='0' />
+                            </ConstructorCall>
+                        </VariableDeclarator>
+                    </LocalVariableDeclaration>
+                    <LocalVariableDeclaration BeginColumn='9' BeginLine='34' EffectiveVisibility='local' EndColumn='18' EndLine='34' Final='false' Image='' TypeInferred='false' Visibility='local'>
+                        <ModifierList BeginColumn='5' BeginLine='34' EffectiveModifiers='[]' EndColumn='5' EndLine='34' ExplicitModifiers='[]' Image='' />
+                        <ClassType BeginColumn='5' BeginLine='34' EndColumn='8' EndLine='34' FullyQualified='false' Image='' PackageQualifier='' SimpleName='URL' />
+                        <VariableDeclarator BeginColumn='9' BeginLine='34' EndColumn='69' EndLine='35' Image='' Initializer='true' Name='ressource'>
+                            <VariableId ArrayType='false' BeginColumn='9' BeginLine='34' EffectiveVisibility='local' EndColumn='18' EndLine='34' EnumConstant='false' ExceptionBlockParameter='false' Field='false' Final='false' ForLoopVariable='false' ForeachVariable='false' FormalParameter='false' Image='' LambdaParameter='false' LocalVariable='true' Name='ressource' PatternBinding='false' RecordComponent='false' ResourceDeclaration='false' Static='false' TypeInferred='false' Unnamed='false' Visibility='local' />
+                            <MethodCall BeginColumn='21' BeginLine='34' CompileTimeConstant='false' EndColumn='69' EndLine='35' Expression='true' Image='getResource' MethodName='getResource' ParenthesisDepth='0' Parenthesized='false'>
+                                <MethodCall BeginColumn='21' BeginLine='34' CompileTimeConstant='false' EndColumn='31' EndLine='34' Expression='true' Image='getClass' MethodName='getClass' ParenthesisDepth='0' Parenthesized='false'>
+                                    <ArgumentList BeginColumn='29' BeginLine='34' Empty='true' EndColumn='31' EndLine='34' Image='' Size='0' />
+                                </MethodCall>
+                                <ArgumentList BeginColumn='21' BeginLine='35' Empty='false' EndColumn='69' EndLine='35' Image='' Size='1'>
+                                    <StringLiteral BeginColumn='22' BeginLine='35' CompileTimeConstant='true' ConstValue='/grilles/sudoku16-moyen-presque-complete.txt' Empty='false' EndColumn='68' EndLine='35' Expression='true' Image='"/grilles/sudoku16-moyen-presque-complete.txt"' Length='44' LiteralText='"/grilles/sudoku16-moyen-presque-complete.txt"' ParenthesisDepth='0' Parenthesized='false' TextBlock='false' />
+                                </ArgumentList>
+                            </MethodCall>
+                        </VariableDeclarator>
+                    </LocalVariableDeclaration>
+                    <LocalVariableDeclaration BeginColumn='9' BeginLine='36' EffectiveVisibility='local' EndColumn='21' EndLine='36' Final='false' Image='' TypeInferred='false' Visibility='local'>
+                        <ModifierList BeginColumn='5' BeginLine='36' EffectiveModifiers='[]' EndColumn='5' EndLine='36' ExplicitModifiers='[]' Image='' />
+                        <ClassType BeginColumn='5' BeginLine='36' EndColumn='8' EndLine='36' FullyQualified='false' Image='' PackageQualifier='' SimpleName='URL' />
+                        <VariableDeclarator BeginColumn='9' BeginLine='36' EndColumn='70' EndLine='36' Image='' Initializer='true' Name='ressourceAlt'>
+                            <VariableId ArrayType='false' BeginColumn='9' BeginLine='36' EffectiveVisibility='local' EndColumn='21' EndLine='36' EnumConstant='false' ExceptionBlockParameter='false' Field='false' Final='false' ForLoopVariable='false' ForeachVariable='false' FormalParameter='false' Image='' LambdaParameter='false' LocalVariable='true' Name='ressourceAlt' PatternBinding='false' RecordComponent='false' ResourceDeclaration='false' Static='false' TypeInferred='false' Unnamed='false' Visibility='local' />
+                            <MethodCall BeginColumn='24' BeginLine='36' CompileTimeConstant='false' EndColumn='70' EndLine='36' Expression='true' Image='getResource' MethodName='getResource' ParenthesisDepth='0' Parenthesized='false'>
+                                <MethodCall BeginColumn='24' BeginLine='36' CompileTimeConstant='false' EndColumn='34' EndLine='36' Expression='true' Image='getClass' MethodName='getClass' ParenthesisDepth='0' Parenthesized='false'>
+                                    <ArgumentList BeginColumn='32' BeginLine='36' Empty='true' EndColumn='34' EndLine='36' Image='' Size='0' />
+                                </MethodCall>
+                                <ArgumentList BeginColumn='46' BeginLine='36' Empty='false' EndColumn='70' EndLine='36' Image='' Size='1'>
+                                    <StringLiteral BeginColumn='47' BeginLine='36' CompileTimeConstant='true' ConstValue='/grilles/sudoku9.txt' Empty='false' EndColumn='69' EndLine='36' Expression='true' Image='"/grilles/sudoku9.txt"' Length='20' LiteralText='"/grilles/sudoku9.txt"' ParenthesisDepth='0' Parenthesized='false' TextBlock='false' />
+                                </ArgumentList>
+                            </MethodCall>
+                        </VariableDeclarator>
+                    </LocalVariableDeclaration>
+                    <ExpressionStatement BeginColumn='5' BeginLine='37' EndColumn='70' EndLine='38' Image=''>
+                        <MethodCall BeginColumn='5' BeginLine='37' CompileTimeConstant='false' EndColumn='69' EndLine='38' Expression='true' Image='assertNotNull' MethodName='assertNotNull' ParenthesisDepth='0' Parenthesized='false'>
+                            <ArgumentList BeginColumn='18' BeginLine='37' Empty='false' EndColumn='69' EndLine='38' Image='' Size='2'>
+                                <VariableAccess AccessType='READ' BeginColumn='19' BeginLine='37' CompileTimeConstant='false' EndColumn='28' EndLine='37' Expression='true' Image='ressource' Name='ressource' ParenthesisDepth='0' Parenthesized='false' />
+                                <StringLiteral BeginColumn='9' BeginLine='38' CompileTimeConstant='true' ConstValue='Le fichier de grille n&apos;a pas été trouvé dans le classpath' Empty='false' EndColumn='68' EndLine='38' Expression='true' Image='"Le fichier de grille n&apos;a pas été trouvé dans le classpath"' Length='57' LiteralText='"Le fichier de grille n&apos;a pas été trouvé dans le classpath"' ParenthesisDepth='0' Parenthesized='false' TextBlock='false' />
+                            </ArgumentList>
+                        </MethodCall>
+                    </ExpressionStatement>
+                    <TryStatement BeginColumn='5' BeginLine='40' EndColumn='6' EndLine='42' Image='' TryWithResources='true'>
+                        <ResourceList BeginColumn='9' BeginLine='40' Empty='false' EndColumn='50' EndLine='40' Image='' Size='1' TrailingSemiColon='false'>
+                            <Resource BeginColumn='10' BeginLine='40' ConciseResource='false' EndColumn='49' EndLine='40' Image='' StableName='in'>
+                                <LocalVariableDeclaration BeginColumn='22' BeginLine='40' EffectiveVisibility='local' EndColumn='24' EndLine='40' Final='true' Image='' TypeInferred='false' Visibility='local'>
+                                    <ModifierList BeginColumn='10' BeginLine='40' EffectiveModifiers='[final]' EndColumn='10' EndLine='40' ExplicitModifiers='[]' Image='' />
+                                    <ClassType BeginColumn='10' BeginLine='40' EndColumn='21' EndLine='40' FullyQualified='false' Image='' PackageQualifier='' SimpleName='InputStream' />
+                                    <VariableDeclarator BeginColumn='22' BeginLine='40' EndColumn='49' EndLine='40' Image='' Initializer='true' Name='in'>
+                                        <VariableId ArrayType='false' BeginColumn='22' BeginLine='40' EffectiveVisibility='local' EndColumn='24' EndLine='40' EnumConstant='false' ExceptionBlockParameter='false' Field='false' Final='true' ForLoopVariable='false' ForeachVariable='false' FormalParameter='false' Image='' LambdaParameter='false' LocalVariable='false' Name='in' PatternBinding='false' RecordComponent='false' ResourceDeclaration='true' Static='false' TypeInferred='false' Unnamed='false' Visibility='local' />
+                                        <MethodCall BeginColumn='27' BeginLine='40' CompileTimeConstant='false' EndColumn='49' EndLine='40' Expression='true' Image='openStream' MethodName='openStream' ParenthesisDepth='0' Parenthesized='false'>
+                                            <VariableAccess AccessType='READ' BeginColumn='27' BeginLine='40' CompileTimeConstant='false' EndColumn='36' EndLine='40' Expression='true' Image='ressource' Name='ressource' ParenthesisDepth='0' Parenthesized='false' />
+                                            <ArgumentList BeginColumn='47' BeginLine='40' Empty='true' EndColumn='49' EndLine='40' Image='' Size='0' />
+                                        </MethodCall>
+                                    </VariableDeclarator>
+                                </LocalVariableDeclaration>
+                            </Resource>
+                        </ResourceList>
+                        <Block BeginColumn='51' BeginLine='40' Empty='false' EndColumn='6' EndLine='42' Image='' Size='1' containsComment='false'>
+                            <ExpressionStatement BeginColumn='7' BeginLine='41' EndColumn='63' EndLine='41' Image=''>
+                                <AssignmentExpression BeginColumn='7' BeginLine='41' CompileTimeConstant='false' Compound='false' EndColumn='62' EndLine='41' Expression='true' Image='' Operator='=' ParenthesisDepth='0' Parenthesized='false'>
+                                    <VariableAccess AccessType='WRITE' BeginColumn='7' BeginLine='41' CompileTimeConstant='false' EndColumn='13' EndLine='41' Expression='true' Image='grille' Name='grille' ParenthesisDepth='0' Parenthesized='false' />
+                                    <MethodCall BeginColumn='16' BeginLine='41' CompileTimeConstant='false' EndColumn='62' EndLine='41' Expression='true' Image='parse' MethodName='parse' ParenthesisDepth='0' Parenthesized='false'>
+                                        <TypeExpression BeginColumn='16' BeginLine='41' CompileTimeConstant='false' EndColumn='28' EndLine='41' Expression='true' Image='' ParenthesisDepth='0' Parenthesized='false'>
+                                            <ClassType BeginColumn='16' BeginLine='41' EndColumn='28' EndLine='41' FullyQualified='false' Image='' PackageQualifier='' SimpleName='GrilleParser' />
+                                        </TypeExpression>
+                                        <ArgumentList BeginColumn='34' BeginLine='41' Empty='false' EndColumn='62' EndLine='41' Image='' Size='3'>
+                                            <VariableAccess AccessType='READ' BeginColumn='35' BeginLine='41' CompileTimeConstant='false' EndColumn='37' EndLine='41' Expression='true' Image='in' Name='in' ParenthesisDepth='0' Parenthesized='false' />
+                                            <VariableAccess AccessType='READ' BeginColumn='39' BeginLine='41' CompileTimeConstant='false' EndColumn='46' EndLine='41' Expression='true' Image='factory' Name='factory' ParenthesisDepth='0' Parenthesized='false' />
+                                            <VariableAccess AccessType='READ' BeginColumn='48' BeginLine='41' CompileTimeConstant='false' EndColumn='61' EndLine='41' Expression='true' Image='valeurFactory' Name='valeurFactory' ParenthesisDepth='0' Parenthesized='false' />
+                                        </ArgumentList>
+                                    </MethodCall>
+                                </AssignmentExpression>
+                            </ExpressionStatement>
+                        </Block>
+                    </TryStatement>
+                    <TryStatement BeginColumn='5' BeginLine='43' EndColumn='6' EndLine='45' Image='' TryWithResources='true'>
+                        <ResourceList BeginColumn='9' BeginLine='43' Empty='false' EndColumn='53' EndLine='43' Image='' Size='1' TrailingSemiColon='false'>
+                            <Resource BeginColumn='10' BeginLine='43' ConciseResource='false' EndColumn='52' EndLine='43' Image='' StableName='in'>
+                                <LocalVariableDeclaration BeginColumn='22' BeginLine='43' EffectiveVisibility='local' EndColumn='24' EndLine='43' Final='true' Image='' TypeInferred='false' Visibility='local'>
+                                    <ModifierList BeginColumn='10' BeginLine='43' EffectiveModifiers='[final]' EndColumn='10' EndLine='43' ExplicitModifiers='[]' Image='' />
+                                    <ClassType BeginColumn='10' BeginLine='43' EndColumn='21' EndLine='43' FullyQualified='false' Image='' PackageQualifier='' SimpleName='InputStream' />
+                                    <VariableDeclarator BeginColumn='22' BeginLine='43' EndColumn='52' EndLine='43' Image='' Initializer='true' Name='in'>
+                                        <VariableId ArrayType='false' BeginColumn='22' BeginLine='43' EffectiveVisibility='local' EndColumn='24' EndLine='43' EnumConstant='false' ExceptionBlockParameter='false' Field='false' Final='true' ForLoopVariable='false' ForeachVariable='false' FormalParameter='false' Image='' LambdaParameter='false' LocalVariable='false' Name='in' PatternBinding='false' RecordComponent='false' ResourceDeclaration='true' Static='false' TypeInferred='false' Unnamed='false' Visibility='local' />
+                                        <MethodCall BeginColumn='27' BeginLine='43' CompileTimeConstant='false' EndColumn='52' EndLine='43' Expression='true' Image='openStream' MethodName='openStream' ParenthesisDepth='0' Parenthesized='false'>
+                                            <VariableAccess AccessType='READ' BeginColumn='27' BeginLine='43' CompileTimeConstant='false' EndColumn='39' EndLine='43' Expression='true' Image='ressourceAlt' Name='ressourceAlt' ParenthesisDepth='0' Parenthesized='false' />
+                                            <ArgumentList BeginColumn='50' BeginLine='43' Empty='true' EndColumn='52' EndLine='43' Image='' Size='0' />
+                                        </MethodCall>
+                                    </VariableDeclarator>
+                                </LocalVariableDeclaration>
+                            </Resource>
+                        </ResourceList>
+                        <Block BeginColumn='54' BeginLine='43' Empty='false' EndColumn='6' EndLine='45' Image='' Size='1' containsComment='false'>
+                            <ExpressionStatement BeginColumn='7' BeginLine='44' EndColumn='66' EndLine='44' Image=''>
+                                <AssignmentExpression BeginColumn='7' BeginLine='44' CompileTimeConstant='false' Compound='false' EndColumn='65' EndLine='44' Expression='true' Image='' Operator='=' ParenthesisDepth='0' Parenthesized='false'>
+                                    <VariableAccess AccessType='WRITE' BeginColumn='7' BeginLine='44' CompileTimeConstant='false' EndColumn='16' EndLine='44' Expression='true' Image='grilleDe9' Name='grilleDe9' ParenthesisDepth='0' Parenthesized='false' />
+                                    <MethodCall BeginColumn='19' BeginLine='44' CompileTimeConstant='false' EndColumn='65' EndLine='44' Expression='true' Image='parse' MethodName='parse' ParenthesisDepth='0' Parenthesized='false'>
+                                        <TypeExpression BeginColumn='19' BeginLine='44' CompileTimeConstant='false' EndColumn='31' EndLine='44' Expression='true' Image='' ParenthesisDepth='0' Parenthesized='false'>
+                                            <ClassType BeginColumn='19' BeginLine='44' EndColumn='31' EndLine='44' FullyQualified='false' Image='' PackageQualifier='' SimpleName='GrilleParser' />
+                                        </TypeExpression>
+                                        <ArgumentList BeginColumn='37' BeginLine='44' Empty='false' EndColumn='65' EndLine='44' Image='' Size='3'>
+                                            <VariableAccess AccessType='READ' BeginColumn='38' BeginLine='44' CompileTimeConstant='false' EndColumn='40' EndLine='44' Expression='true' Image='in' Name='in' ParenthesisDepth='0' Parenthesized='false' />
+                                            <VariableAccess AccessType='READ' BeginColumn='42' BeginLine='44' CompileTimeConstant='false' EndColumn='49' EndLine='44' Expression='true' Image='factory' Name='factory' ParenthesisDepth='0' Parenthesized='false' />
+                                            <VariableAccess AccessType='READ' BeginColumn='51' BeginLine='44' CompileTimeConstant='false' EndColumn='64' EndLine='44' Expression='true' Image='valeurFactory' Name='valeurFactory' ParenthesisDepth='0' Parenthesized='false' />
+                                        </ArgumentList>
+                                    </MethodCall>
+                                </AssignmentExpression>
+                            </ExpressionStatement>
+                        </Block>
+                    </TryStatement>
+                    <IfStatement BeginColumn='5' BeginLine='48' Else='false' EndColumn='6' EndLine='53' Image=''>
+                        <InfixExpression BeginColumn='9' BeginLine='48' CompileTimeConstant='false' EndColumn='23' EndLine='48' Expression='true' Image='' Operator='!=' ParenthesisDepth='0' Parenthesized='false'>
+                            <VariableAccess AccessType='READ' BeginColumn='9' BeginLine='48' CompileTimeConstant='false' EndColumn='15' EndLine='48' Expression='true' Image='grille' Name='grille' ParenthesisDepth='0' Parenthesized='false' />
+                            <NullLiteral BeginColumn='19' BeginLine='48' CompileTimeConstant='false' EndColumn='23' EndLine='48' Expression='true' Image='' LiteralText='null' ParenthesisDepth='0' Parenthesized='false' />
+                        </InfixExpression>
+                        <Block BeginColumn='25' BeginLine='48' Empty='false' EndColumn='6' EndLine='53' Image='' Size='2' containsComment='false'>
+                            <ExpressionStatement BeginColumn='7' BeginLine='49' EndColumn='73' EndLine='50' Image=''>
+                                <MethodCall BeginColumn='7' BeginLine='49' CompileTimeConstant='false' EndColumn='72' EndLine='50' Expression='true' Image='println' MethodName='println' ParenthesisDepth='0' Parenthesized='false'>
+                                    <FieldAccess AccessType='READ' BeginColumn='7' BeginLine='49' CompileTimeConstant='false' EndColumn='17' EndLine='49' Expression='true' Image='out' Name='out' ParenthesisDepth='0' Parenthesized='false'>
+                                        <TypeExpression BeginColumn='7' BeginLine='49' CompileTimeConstant='false' EndColumn='13' EndLine='49' Expression='true' Image='' ParenthesisDepth='0' Parenthesized='false'>
+                                            <ClassType BeginColumn='7' BeginLine='49' EndColumn='13' EndLine='49' FullyQualified='false' Image='' PackageQualifier='' SimpleName='System' />
+                                        </TypeExpression>
+                                    </FieldAccess>
+                                    <ArgumentList BeginColumn='19' BeginLine='50' Empty='false' EndColumn='72' EndLine='50' Image='' Size='1'>
+                                        <InfixExpression BeginColumn='20' BeginLine='50' CompileTimeConstant='false' EndColumn='71' EndLine='50' Expression='true' Image='' Operator='+' ParenthesisDepth='0' Parenthesized='false'>
+                                            <StringLiteral BeginColumn='20' BeginLine='50' CompileTimeConstant='true' ConstValue='Dimension de la grille : ' Empty='false' EndColumn='47' EndLine='50' Expression='true' Image='"Dimension de la grille : "' Length='25' LiteralText='"Dimension de la grille : "' ParenthesisDepth='0' Parenthesized='false' TextBlock='false' />
+                                            <MethodCall BeginColumn='50' BeginLine='50' CompileTimeConstant='false' EndColumn='71' EndLine='50' Expression='true' Image='getDimension' MethodName='getDimension' ParenthesisDepth='0' Parenthesized='false'>
+                                                <VariableAccess AccessType='READ' BeginColumn='50' BeginLine='50' CompileTimeConstant='false' EndColumn='56' EndLine='50' Expression='true' Image='grille' Name='grille' ParenthesisDepth='0' Parenthesized='false' />
+                                                <ArgumentList BeginColumn='69' BeginLine='50' Empty='true' EndColumn='71' EndLine='50' Image='' Size='0' />
+                                            </MethodCall>
+                                        </InfixExpression>
+                                    </ArgumentList>
+                                </MethodCall>
+                            </ExpressionStatement>
+                            <ExpressionStatement BeginColumn='7' BeginLine='51' EndColumn='76' EndLine='52' Image=''>
+                                <MethodCall BeginColumn='7' BeginLine='51' CompileTimeConstant='false' EndColumn='75' EndLine='52' Expression='true' Image='println' MethodName='println' ParenthesisDepth='0' Parenthesized='false'>
+                                    <FieldAccess AccessType='READ' BeginColumn='7' BeginLine='51' CompileTimeConstant='false' EndColumn='17' EndLine='51' Expression='true' Image='out' Name='out' ParenthesisDepth='0' Parenthesized='false'>
+                                        <TypeExpression BeginColumn='7' BeginLine='51' CompileTimeConstant='false' EndColumn='13' EndLine='51' Expression='true' Image='' ParenthesisDepth='0' Parenthesized='false'>
+                                            <ClassType BeginColumn='7' BeginLine='51' EndColumn='13' EndLine='51' FullyQualified='false' Image='' PackageQualifier='' SimpleName='System' />
+                                        </TypeExpression>
+                                    </FieldAccess>
+                                    <ArgumentList BeginColumn='19' BeginLine='52' Empty='false' EndColumn='75' EndLine='52' Image='' Size='1'>
+                                        <InfixExpression BeginColumn='20' BeginLine='52' CompileTimeConstant='false' EndColumn='74' EndLine='52' Expression='true' Image='' Operator='+' ParenthesisDepth='0' Parenthesized='false'>
+                                            <StringLiteral BeginColumn='20' BeginLine='52' CompileTimeConstant='true' ConstValue='Dimension de la grille : ' Empty='false' EndColumn='47' EndLine='52' Expression='true' Image='"Dimension de la grille : "' Length='25' LiteralText='"Dimension de la grille : "' ParenthesisDepth='0' Parenthesized='false' TextBlock='false' />
+                                            <MethodCall BeginColumn='50' BeginLine='52' CompileTimeConstant='false' EndColumn='74' EndLine='52' Expression='true' Image='getDimension' MethodName='getDimension' ParenthesisDepth='0' Parenthesized='false'>
+                                                <VariableAccess AccessType='READ' BeginColumn='50' BeginLine='52' CompileTimeConstant='false' EndColumn='59' EndLine='52' Expression='true' Image='grilleDe9' Name='grilleDe9' ParenthesisDepth='0' Parenthesized='false' />
+                                                <ArgumentList BeginColumn='72' BeginLine='52' Empty='true' EndColumn='74' EndLine='52' Image='' Size='0' />
+                                            </MethodCall>
+                                        </InfixExpression>
+                                    </ArgumentList>
+                                </MethodCall>
+                            </ExpressionStatement>
+                        </Block>
+                    </IfStatement>
+                </Block>
+            </MethodDeclaration>
+            <MethodDeclaration Abstract='false' Arity='0' BeginColumn='8' BeginLine='57' EffectiveVisibility='package' EndColumn='19' EndLine='57' Final='false' Image='' MainMethod='false' Name='testParsing' Overridden='false' Static='false' Varargs='false' Visibility='package' Void='true'>
+                <ModifierList BeginColumn='3' BeginLine='56' EffectiveModifiers='[]' EndColumn='8' EndLine='56' ExplicitModifiers='[]' Image=''>
+                    <Annotation BeginColumn='3' BeginLine='56' EndColumn='8' EndLine='56' Image='' SimpleName='Test'>
+                        <ClassType BeginColumn='4' BeginLine='56' EndColumn='8' EndLine='56' FullyQualified='false' Image='' PackageQualifier='' SimpleName='Test' />
+                    </Annotation>
+                </ModifierList>
+                <VoidType BeginColumn='3' BeginLine='57' EndColumn='7' EndLine='57' Image='' />
+                <FormalParameters BeginColumn='19' BeginLine='57' Empty='true' EndColumn='21' EndLine='57' Image='' Size='0' />
+                <ThrowsList BeginColumn='22' BeginLine='57' Empty='false' EndColumn='50' EndLine='57' Image='' Size='1'>
+                    <ClassType BeginColumn='29' BeginLine='57' EndColumn='50' EndLine='57' FullyQualified='false' Image='' PackageQualifier='' SimpleName='GrilleParserException' />
+                </ThrowsList>
+                <Block BeginColumn='51' BeginLine='57' Empty='false' EndColumn='4' EndLine='61' Image='' Size='2' containsComment='false'>
+                    <ExpressionStatement BeginColumn='5' BeginLine='58' EndColumn='62' EndLine='59' Image=''>
+                        <MethodCall BeginColumn='5' BeginLine='58' CompileTimeConstant='false' EndColumn='61' EndLine='59' Expression='true' Image='assertNotNull' MethodName='assertNotNull' ParenthesisDepth='0' Parenthesized='false'>
+                            <ArgumentList BeginColumn='18' BeginLine='58' Empty='false' EndColumn='61' EndLine='59' Image='' Size='2'>
+                                <VariableAccess AccessType='READ' BeginColumn='19' BeginLine='58' CompileTimeConstant='false' EndColumn='25' EndLine='58' Expression='true' Image='grille' Name='grille' ParenthesisDepth='0' Parenthesized='false' />
+                                <StringLiteral BeginColumn='9' BeginLine='59' CompileTimeConstant='true' ConstValue='La grille ne doit pas être nulle après le parsing' Empty='false' EndColumn='60' EndLine='59' Expression='true' Image='"La grille ne doit pas être nulle après le parsing"' Length='49' LiteralText='"La grille ne doit pas être nulle après le parsing"' ParenthesisDepth='0' Parenthesized='false' TextBlock='false' />
+                            </ArgumentList>
+                        </MethodCall>
+                    </ExpressionStatement>
+                    <ExpressionStatement BeginColumn='5' BeginLine='60' EndColumn='32' EndLine='60' Image=''>
+                        <MethodCall BeginColumn='5' BeginLine='60' CompileTimeConstant='false' EndColumn='31' EndLine='60' Expression='true' Image='println' MethodName='println' ParenthesisDepth='0' Parenthesized='false'>
+                            <FieldAccess AccessType='READ' BeginColumn='5' BeginLine='60' CompileTimeConstant='false' EndColumn='15' EndLine='60' Expression='true' Image='out' Name='out' ParenthesisDepth='0' Parenthesized='false'>
+                                <TypeExpression BeginColumn='5' BeginLine='60' CompileTimeConstant='false' EndColumn='11' EndLine='60' Expression='true' Image='' ParenthesisDepth='0' Parenthesized='false'>
+                                    <ClassType BeginColumn='5' BeginLine='60' EndColumn='11' EndLine='60' FullyQualified='false' Image='' PackageQualifier='' SimpleName='System' />
+                                </TypeExpression>
+                            </FieldAccess>
+                            <ArgumentList BeginColumn='23' BeginLine='60' Empty='false' EndColumn='31' EndLine='60' Image='' Size='1'>
+                                <VariableAccess AccessType='READ' BeginColumn='24' BeginLine='60' CompileTimeConstant='false' EndColumn='30' EndLine='60' Expression='true' Image='grille' Name='grille' ParenthesisDepth='0' Parenthesized='false' />
+                            </ArgumentList>
+                        </MethodCall>
+                    </ExpressionStatement>
+                </Block>
+            </MethodDeclaration>
+            <MethodDeclaration Abstract='false' Arity='0' BeginColumn='8' BeginLine='64' EffectiveVisibility='package' EndColumn='27' EndLine='64' Final='false' Image='' MainMethod='false' Name='testSolveGrilleDe16' Overridden='false' Static='false' Varargs='false' Visibility='package' Void='true'>
+                <ModifierList BeginColumn='3' BeginLine='63' EffectiveModifiers='[]' EndColumn='8' EndLine='63' ExplicitModifiers='[]' Image=''>
+                    <Annotation BeginColumn='3' BeginLine='63' EndColumn='8' EndLine='63' Image='' SimpleName='Test'>
+                        <ClassType BeginColumn='4' BeginLine='63' EndColumn='8' EndLine='63' FullyQualified='false' Image='' PackageQualifier='' SimpleName='Test' />
+                    </Annotation>
+                </ModifierList>
+                <VoidType BeginColumn='3' BeginLine='64' EndColumn='7' EndLine='64' Image='' />
+                <FormalParameters BeginColumn='27' BeginLine='64' Empty='true' EndColumn='29' EndLine='64' Image='' Size='0' />
+                <ThrowsList BeginColumn='30' BeginLine='64' Empty='false' EndColumn='52' EndLine='64' Image='' Size='1'>
+                    <ClassType BeginColumn='37' BeginLine='64' EndColumn='52' EndLine='64' FullyQualified='false' Image='' PackageQualifier='' SimpleName='SolverException' />
+                </ThrowsList>
+                <Block BeginColumn='53' BeginLine='64' Empty='false' EndColumn='4' EndLine='71' Image='' Size='4' containsComment='false'>
+                    <ExpressionStatement BeginColumn='5' BeginLine='65' EndColumn='48' EndLine='66' Image=''>
+                        <MethodCall BeginColumn='5' BeginLine='65' CompileTimeConstant='false' EndColumn='47' EndLine='66' Expression='true' Image='assertEquals' MethodName='assertEquals' ParenthesisDepth='0' Parenthesized='false'>
+                            <ArgumentList BeginColumn='17' BeginLine='65' Empty='false' EndColumn='47' EndLine='66' Image='' Size='3'>
+                                <NumericLiteral Base='10' BeginColumn='18' BeginLine='65' CompileTimeConstant='true' DoubleLiteral='false' EndColumn='20' EndLine='65' Expression='true' FloatLiteral='false' Image='16' IntLiteral='true' Integral='true' LiteralText='16' LongLiteral='false' ParenthesisDepth='0' Parenthesized='false' ValueAsDouble='16.0' ValueAsFloat='16.0' ValueAsInt='16' ValueAsLong='16' />
+                                <MethodCall BeginColumn='22' BeginLine='65' CompileTimeConstant='false' EndColumn='43' EndLine='65' Expression='true' Image='getDimension' MethodName='getDimension' ParenthesisDepth='0' Parenthesized='false'>
+                                    <VariableAccess AccessType='READ' BeginColumn='22' BeginLine='65' CompileTimeConstant='false' EndColumn='28' EndLine='65' Expression='true' Image='grille' Name='grille' ParenthesisDepth='0' Parenthesized='false' />
+                                    <ArgumentList BeginColumn='41' BeginLine='65' Empty='true' EndColumn='43' EndLine='65' Image='' Size='0' />
+                                </MethodCall>
+                                <StringLiteral BeginColumn='9' BeginLine='66' CompileTimeConstant='true' ConstValue='La grille doit être de dimension 16' Empty='false' EndColumn='46' EndLine='66' Expression='true' Image='"La grille doit être de dimension 16"' Length='35' LiteralText='"La grille doit être de dimension 16"' ParenthesisDepth='0' Parenthesized='false' TextBlock='false' />
+                            </ArgumentList>
+                        </MethodCall>
+                    </ExpressionStatement>
+                    <LocalVariableDeclaration BeginColumn='16' BeginLine='67' EffectiveVisibility='local' EndColumn='22' EndLine='67' Final='false' Image='' TypeInferred='false' Visibility='local'>
+                        <ModifierList BeginColumn='5' BeginLine='67' EffectiveModifiers='[]' EndColumn='5' EndLine='67' ExplicitModifiers='[]' Image='' />
+                        <ClassType BeginColumn='5' BeginLine='67' EndColumn='15' EndLine='67' FullyQualified='false' Image='' PackageQualifier='' SimpleName='SolverImpl' />
+                        <VariableDeclarator BeginColumn='16' BeginLine='67' EndColumn='41' EndLine='67' Image='' Initializer='true' Name='solver'>
+                            <VariableId ArrayType='false' BeginColumn='16' BeginLine='67' EffectiveVisibility='local' EndColumn='22' EndLine='67' EnumConstant='false' ExceptionBlockParameter='false' Field='false' Final='false' ForLoopVariable='false' ForeachVariable='false' FormalParameter='false' Image='' LambdaParameter='false' LocalVariable='true' Name='solver' PatternBinding='false' RecordComponent='false' ResourceDeclaration='false' Static='false' TypeInferred='false' Unnamed='false' Visibility='local' />
+                            <ConstructorCall AnonymousClass='false' BeginColumn='25' BeginLine='67' CompileTimeConstant='false' DiamondTypeArgs='false' EndColumn='41' EndLine='67' Expression='true' Image='' MethodName='new' ParenthesisDepth='0' Parenthesized='false' QualifiedInstanceCreation='false'>
+                                <ClassType BeginColumn='29' BeginLine='67' EndColumn='39' EndLine='67' FullyQualified='false' Image='' PackageQualifier='' SimpleName='SolverImpl' />
+                                <ArgumentList BeginColumn='39' BeginLine='67' Empty='true' EndColumn='41' EndLine='67' Image='' Size='0' />
+                            </ConstructorCall>
+                        </VariableDeclarator>
+                    </LocalVariableDeclaration>
+                    <ExpressionStatement BeginColumn='5' BeginLine='68' EndColumn='69' EndLine='68' Image=''>
+                        <MethodCall BeginColumn='5' BeginLine='68' CompileTimeConstant='false' EndColumn='68' EndLine='68' Expression='true' Image='assertTrue' MethodName='assertTrue' ParenthesisDepth='0' Parenthesized='false'>
+                            <ArgumentList BeginColumn='15' BeginLine='68' Empty='false' EndColumn='68' EndLine='68' Image='' Size='2'>
+                                <MethodCall BeginColumn='16' BeginLine='68' CompileTimeConstant='false' EndColumn='36' EndLine='68' Expression='true' Image='solve' MethodName='solve' ParenthesisDepth='0' Parenthesized='false'>
+                                    <VariableAccess AccessType='READ' BeginColumn='16' BeginLine='68' CompileTimeConstant='false' EndColumn='22' EndLine='68' Expression='true' Image='solver' Name='solver' ParenthesisDepth='0' Parenthesized='false' />
+                                    <ArgumentList BeginColumn='28' BeginLine='68' Empty='false' EndColumn='36' EndLine='68' Image='' Size='1'>
+                                        <VariableAccess AccessType='READ' BeginColumn='29' BeginLine='68' CompileTimeConstant='false' EndColumn='35' EndLine='68' Expression='true' Image='grille' Name='grille' ParenthesisDepth='0' Parenthesized='false' />
+                                    </ArgumentList>
+                                </MethodCall>
+                                <StringLiteral BeginColumn='38' BeginLine='68' CompileTimeConstant='true' ConstValue='La grille doit être résolue' Empty='false' EndColumn='67' EndLine='68' Expression='true' Image='"La grille doit être résolue"' Length='27' LiteralText='"La grille doit être résolue"' ParenthesisDepth='0' Parenthesized='false' TextBlock='false' />
+                            </ArgumentList>
+                        </MethodCall>
+                    </ExpressionStatement>
+                    <ExpressionStatement BeginColumn='5' BeginLine='69' EndColumn='58' EndLine='70' Image=''>
+                        <MethodCall BeginColumn='5' BeginLine='69' CompileTimeConstant='false' EndColumn='57' EndLine='70' Expression='true' Image='assertTrue' MethodName='assertTrue' ParenthesisDepth='0' Parenthesized='false'>
+                            <ArgumentList BeginColumn='15' BeginLine='69' Empty='false' EndColumn='57' EndLine='70' Image='' Size='2'>
+                                <MethodCall BeginColumn='16' BeginLine='69' CompileTimeConstant='false' EndColumn='36' EndLine='69' Expression='true' Image='solve' MethodName='solve' ParenthesisDepth='0' Parenthesized='false'>
+                                    <VariableAccess AccessType='READ' BeginColumn='16' BeginLine='69' CompileTimeConstant='false' EndColumn='22' EndLine='69' Expression='true' Image='solver' Name='solver' ParenthesisDepth='0' Parenthesized='false' />
+                                    <ArgumentList BeginColumn='28' BeginLine='69' Empty='false' EndColumn='36' EndLine='69' Image='' Size='1'>
+                                        <VariableAccess AccessType='READ' BeginColumn='29' BeginLine='69' CompileTimeConstant='false' EndColumn='35' EndLine='69' Expression='true' Image='grille' Name='grille' ParenthesisDepth='0' Parenthesized='false' />
+                                    </ArgumentList>
+                                </MethodCall>
+                                <StringLiteral BeginColumn='9' BeginLine='70' CompileTimeConstant='true' ConstValue='La grille doit être complète après résolution' Empty='false' EndColumn='56' EndLine='70' Expression='true' Image='"La grille doit être complète après résolution"' Length='45' LiteralText='"La grille doit être complète après résolution"' ParenthesisDepth='0' Parenthesized='false' TextBlock='false' />
+                            </ArgumentList>
+                        </MethodCall>
+                    </ExpressionStatement>
+                </Block>
+            </MethodDeclaration>
+            <MethodDeclaration Abstract='false' Arity='0' BeginColumn='8' BeginLine='74' EffectiveVisibility='package' EndColumn='26' EndLine='74' Final='false' Image='' MainMethod='false' Name='testSolveGrilleDe9' Overridden='false' Static='false' Varargs='false' Visibility='package' Void='true'>
+                <ModifierList BeginColumn='3' BeginLine='73' EffectiveModifiers='[]' EndColumn='8' EndLine='73' ExplicitModifiers='[]' Image=''>
+                    <Annotation BeginColumn='3' BeginLine='73' EndColumn='8' EndLine='73' Image='' SimpleName='Test'>
+                        <ClassType BeginColumn='4' BeginLine='73' EndColumn='8' EndLine='73' FullyQualified='false' Image='' PackageQualifier='' SimpleName='Test' />
+                    </Annotation>
+                </ModifierList>
+                <VoidType BeginColumn='3' BeginLine='74' EndColumn='7' EndLine='74' Image='' />
+                <FormalParameters BeginColumn='26' BeginLine='74' Empty='true' EndColumn='28' EndLine='74' Image='' Size='0' />
+                <ThrowsList BeginColumn='29' BeginLine='74' Empty='false' EndColumn='51' EndLine='74' Image='' Size='1'>
+                    <ClassType BeginColumn='36' BeginLine='74' EndColumn='51' EndLine='74' FullyQualified='false' Image='' PackageQualifier='' SimpleName='SolverException' />
+                </ThrowsList>
+                <Block BeginColumn='52' BeginLine='74' Empty='false' EndColumn='4' EndLine='80' Image='' Size='2' containsComment='false'>
+                    <ExpressionStatement BeginColumn='5' BeginLine='75' EndColumn='47' EndLine='76' Image=''>
+                        <MethodCall BeginColumn='5' BeginLine='75' CompileTimeConstant='false' EndColumn='46' EndLine='76' Expression='true' Image='assertEquals' MethodName='assertEquals' ParenthesisDepth='0' Parenthesized='false'>
+                            <ArgumentList BeginColumn='17' BeginLine='75' Empty='false' EndColumn='46' EndLine='76' Image='' Size='3'>
+                                <NumericLiteral Base='10' BeginColumn='18' BeginLine='75' CompileTimeConstant='true' DoubleLiteral='false' EndColumn='19' EndLine='75' Expression='true' FloatLiteral='false' Image='9' IntLiteral='true' Integral='true' LiteralText='9' LongLiteral='false' ParenthesisDepth='0' Parenthesized='false' ValueAsDouble='9.0' ValueAsFloat='9.0' ValueAsInt='9' ValueAsLong='9' />
+                                <MethodCall BeginColumn='21' BeginLine='75' CompileTimeConstant='false' EndColumn='45' EndLine='75' Expression='true' Image='getDimension' MethodName='getDimension' ParenthesisDepth='0' Parenthesized='false'>
+                                    <VariableAccess AccessType='READ' BeginColumn='21' BeginLine='75' CompileTimeConstant='false' EndColumn='30' EndLine='75' Expression='true' Image='grilleDe9' Name='grilleDe9' ParenthesisDepth='0' Parenthesized='false' />
+                                    <ArgumentList BeginColumn='43' BeginLine='75' Empty='true' EndColumn='45' EndLine='75' Image='' Size='0' />
+                                </MethodCall>
+                                <StringLiteral BeginColumn='9' BeginLine='76' CompileTimeConstant='true' ConstValue='La grille doit être de dimension 9' Empty='false' EndColumn='45' EndLine='76' Expression='true' Image='"La grille doit être de dimension 9"' Length='34' LiteralText='"La grille doit être de dimension 9"' ParenthesisDepth='0' Parenthesized='false' TextBlock='false' />
+                            </ArgumentList>
+                        </MethodCall>
+                    </ExpressionStatement>
+                    <ExpressionStatement BeginColumn='5' BeginLine='77' EndColumn='40' EndLine='78' Image=''>
+                        <MethodCall BeginColumn='5' BeginLine='77' CompileTimeConstant='false' EndColumn='39' EndLine='78' Expression='true' Image='assertTrue' MethodName='assertTrue' ParenthesisDepth='0' Parenthesized='false'>
+                            <ArgumentList BeginColumn='15' BeginLine='77' Empty='false' EndColumn='39' EndLine='78' Image='' Size='2'>
+                                <CastExpression BeginColumn='16' BeginLine='77' CompileTimeConstant='false' EndColumn='59' EndLine='77' Expression='true' Image='' ParenthesisDepth='0' Parenthesized='false'>
+                                    <ClassType BeginColumn='17' BeginLine='77' EndColumn='24' EndLine='77' FullyQualified='false' Image='' PackageQualifier='' SimpleName='Boolean' />
+                                    <MethodCall BeginColumn='26' BeginLine='77' CompileTimeConstant='false' EndColumn='59' EndLine='77' Expression='true' Image='solve' MethodName='solve' ParenthesisDepth='0' Parenthesized='false'>
+                                        <ConstructorCall AnonymousClass='false' BeginColumn='26' BeginLine='77' CompileTimeConstant='false' DiamondTypeArgs='false' EndColumn='42' EndLine='77' Expression='true' Image='' MethodName='new' ParenthesisDepth='0' Parenthesized='false' QualifiedInstanceCreation='false'>
+                                            <ClassType BeginColumn='30' BeginLine='77' EndColumn='40' EndLine='77' FullyQualified='false' Image='' PackageQualifier='' SimpleName='SolverImpl' />
+                                            <ArgumentList BeginColumn='40' BeginLine='77' Empty='true' EndColumn='42' EndLine='77' Image='' Size='0' />
+                                        </ConstructorCall>
+                                        <ArgumentList BeginColumn='48' BeginLine='77' Empty='false' EndColumn='59' EndLine='77' Image='' Size='1'>
+                                            <VariableAccess AccessType='READ' BeginColumn='49' BeginLine='77' CompileTimeConstant='false' EndColumn='58' EndLine='77' Expression='true' Image='grilleDe9' Name='grilleDe9' ParenthesisDepth='0' Parenthesized='false' />
+                                        </ArgumentList>
+                                    </MethodCall>
+                                </CastExpression>
+                                <StringLiteral BeginColumn='9' BeginLine='78' CompileTimeConstant='true' ConstValue='La grille doit être résolue' Empty='false' EndColumn='38' EndLine='78' Expression='true' Image='"La grille doit être résolue"' Length='27' LiteralText='"La grille doit être résolue"' ParenthesisDepth='0' Parenthesized='false' TextBlock='false' />
+                            </ArgumentList>
+                        </MethodCall>
+                    </ExpressionStatement>
+                </Block>
+            </MethodDeclaration>
+        </ClassBody>
+    </ClassDeclaration>
+</CompilationUnit>

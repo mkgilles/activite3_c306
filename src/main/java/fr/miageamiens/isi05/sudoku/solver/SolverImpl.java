@@ -8,6 +8,7 @@ import fr.miageamiens.isi05.sudoku.modele.exceptions.ValeurInitialeModificationE
 import fr.miageamiens.isi05.sudoku.modele.exceptions.ValeurInterditeException;
 
 import java.util.Collection;
+
 /**
  * Implémentation de Solver utilisant une approche par backtracking.
  *
@@ -19,7 +20,9 @@ public class SolverImpl implements Solver {
    * Résout une Grille.
    *
    * @param grille Grille à résoudre
+   * 
    * @return true si la grille a été résolue
+   * 
    * @throws SolverException si la grille ne peut pas être résolue
    */
   @Override
@@ -49,7 +52,7 @@ public class SolverImpl implements Solver {
                     grille.setValeur(ligne, col, null);
                   }
                 } catch (ValeurImpossibleException | ValeurInterditeException
-                    | HorsBornesException
+                    | HorsBornesException | SolverException
                     | ValeurInitialeModificationException e) {
                   // ignorer et tester la valeur suivante
                 }
