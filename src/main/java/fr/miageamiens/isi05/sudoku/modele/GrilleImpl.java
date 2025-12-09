@@ -54,8 +54,8 @@ public class GrilleImpl implements Grille {
   /**
    * Methode d'initialisation de la grille.
    * 
-   * @param valeursAutorisees valeurs autorisées dans la grille
-   * @param valeursInitiales  valeurs initiales de la grille
+   * @param valAutorisees valeurs autorisées dans la grille
+   * @param valInitiales  valeurs initiales de la grille
    */
   public void initialisation(Collection<ValeurDeCase> valAutorisees,
       ValeurDeCase[][] valInitiales) {

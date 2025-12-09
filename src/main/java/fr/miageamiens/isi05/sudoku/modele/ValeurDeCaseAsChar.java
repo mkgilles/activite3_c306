@@ -1,6 +1,3 @@
-/**
- * 
- */
 package fr.miageamiens.isi05.sudoku.modele;
 
 /**
@@ -18,7 +15,7 @@ public class ValeurDeCaseAsChar implements ValeurDeCase {
   /**
    * Initialise la valeur (réservé au package).
    * 
-   * @param value valeur à stocker
+   * @param valeur valeur à stocker
    */
   public void init(char valeur) {
     this.valeur = valeur;

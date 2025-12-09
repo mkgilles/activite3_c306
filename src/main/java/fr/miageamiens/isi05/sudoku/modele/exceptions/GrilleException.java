@@ -9,10 +9,21 @@ public class GrilleException extends Exception {
         super(msg);
     }
 
+    /**
+     * Constructeur avec message.
+     * 
+     * @param cause
+     */
     public GrilleException(final Throwable cause) {
         super(cause);
     }
 
+    /**
+     * Constructeur avec message plus cause.
+     * 
+     * @param msg
+     * @param cause
+     */
     public GrilleException(final String msg, final Throwable cause) {
         super(msg, cause);
     }
